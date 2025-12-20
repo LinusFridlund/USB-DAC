@@ -1,0 +1,15 @@
+# KiCad temporary and backup files
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups/
+_autosave-*
+fp-info-cache
+
+# Netlists and intermediate files
+*.net
+*.xml
+
+# Output files (optional - keep if you want to track your Gerbers)
+# gerbers/
+# *.pdf
