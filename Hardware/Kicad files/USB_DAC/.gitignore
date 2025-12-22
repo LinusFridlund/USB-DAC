@@ -1,5 +1,5 @@
 # KiCad temporary and backup files
-*.bak
+*.lck
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *-backups/
