@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "09bf870a-7609-4af5-9433-d9e26cb5096e")
 	(paper "A4")
+	(title_block
+		(rev "1.0")
+		(company "Linus Fridlund")
+	)
 	(lib_symbols)
 	(sheet
 		(at 143.51 22.86)
