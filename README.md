@@ -4,9 +4,30 @@ This project is intended as a test for my larger music streamer project that imp
 It accepts a music stream over USB, outputs the analog audio over balanced XLR connections and has an OLED display to show stream info. 
 
 ![Image of early render](USBDACrender.png)
+Image of an early render of the PCB together with a case.
 
 ## Hardware
 The main part of the hardware is the custom developed PCB housing the STM32, DAC chip and its accompanying components
 ![Image of early PCB design](USB_DAC_PCB.png)
 
+### Microcontroller
+A STM32H7 series microcontroller was chosen for its high performance and support for interfaces such as USB HS and SAI (Serial Audio Interface) which are used in the project. In addition I also have previous experience with STM32 based systems. Cost and power consumption were no priorities here since I am only building one unit and it is powered by an external power supply.
+
+### DAC Chip
+The DAC chip used is the ESS ES9039Q2M. It is a chip that is widely used in many other DACs meaning other designs are easy to reference. The datasheet includes important info about recommended output stages, power supply schemes and all the neccesary software details. For these reasons, along with its availability online made it a good choice.
+
+### Power supply
+
+
+### PCB Design considerations
+Extra attention had to be given to a couple of key areas in the PCB design in order to achieve a good result.
+#### Stackup
+A 4 layer stackup is used with the top and bottom being signal layers and the inner layers being ground and power in order to provide easy routing and better signal integrity.
+#### Digital signal integrity
+The USB signals and the ULPI signals between the USB PHY and the STM32 both operate at high frequencies and thus require proper impedance and length matching to ensure their functionality. 
+#### 
+
 ## Software
+
+## Current status
+Currently the hardware is close to being ready for ordering version 1.0. The schematics are finished, all the components are placed and the routing is almost fully finished.
