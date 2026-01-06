@@ -29,5 +29,7 @@ The USB signals and the ULPI signals between the USB PHY and the STM32 both oper
 
 ## Software
 
+The software development will start when the hardware is finished and ordered. So far I have only played around a bit and gotten a rough idea of how it will be structured.
+
 ## Current status
 Currently the hardware is close to being ready for ordering version 1.0. The schematics are finished, all the components are placed and the routing is almost fully finished.
