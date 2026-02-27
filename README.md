@@ -17,7 +17,7 @@ A STM32H7 series microcontroller was chosen for its high performance and support
 The DAC chip used is the ESS ES9039Q2M. It is a chip that is widely used in many other DACs meaning other designs are easy to reference. The datasheet includes important info about recommended output stages, power supply schemes and all the neccesary software details. For these reasons, along with its availability online made it a good choice.
 
 ### Power supply
-
+A small PSU board with a Mean Well 12V supply feeds into a +-12V switching power supply on the main DAC board. The outptus then get filtered through a ferrite bead and a pi filter before being regulated to +-9V and 3.3V for the analog section. The incoming 12V also gets regulated down with less filtering to 5 and 3.3V for the digital components.
 
 ### PCB Design considerations
 Extra attention had to be given to a couple of key areas in the PCB design in order to achieve a good result.
@@ -32,4 +32,4 @@ The USB signals and the ULPI signals between the USB PHY and the STM32 both oper
 The software development will start when the hardware is finished and ordered. So far I have only played around a bit and gotten a rough idea of how it will be structured.
 
 ## Current status
-Currently the hardware is close to being ready for ordering version 1.0. The schematics are finished, all the components are placed and the routing is almost fully finished.
+Currently the hardware design is finished and the PCBs have arrived. Currently the boards are being assembled, then the software development begins!
